@@ -1,0 +1,7 @@
+{
+	"OutputFiles": [
+		"Module.ClipboardFunctions.cpp.obj",
+		"ClipboardFunctions.cpp.obj",
+		"ClipboardFunctionsBPLibrary.cpp.obj"
+	]
+}

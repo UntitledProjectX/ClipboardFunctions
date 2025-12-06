@@ -8,7 +8,7 @@
 #include "ClipboardFunctionsBPLibrary.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeClipboardFunctionsBPLibrary() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -32,16 +32,25 @@ struct Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics
 		{ "ModuleRelativePath", "Public/ClipboardFunctionsBPLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function CopyText constinit property declarations ******************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Text;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function CopyText constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function CopyText Property Definitions *****************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ClipboardFunctionsBPLibrary_eventCopyText_Parms, Text), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::NewProp_Text,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UClipboardFunctionsBPLibrary, nullptr, "CopyText", Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::PropPointers), sizeof(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::ClipboardFunctionsBPLibrary_eventCopyText_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::Function_MetaDataParams)},  };
+// ********** End Function CopyText Property Definitions *******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UClipboardFunctionsBPLibrary, nullptr, "CopyText", 	Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::ClipboardFunctionsBPLibrary_eventCopyText_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText_Statics::ClipboardFunctionsBPLibrary_eventCopyText_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText()
 {
@@ -76,16 +85,25 @@ struct Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics
 		{ "ModuleRelativePath", "Public/ClipboardFunctionsBPLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function PasteText constinit property declarations *****************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function PasteText constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function PasteText Property Definitions ****************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ClipboardFunctionsBPLibrary_eventPasteText_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UClipboardFunctionsBPLibrary, nullptr, "PasteText", Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::PropPointers), sizeof(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::ClipboardFunctionsBPLibrary_eventPasteText_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::Function_MetaDataParams)},  };
+// ********** End Function PasteText Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UClipboardFunctionsBPLibrary, nullptr, "PasteText", 	Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::ClipboardFunctionsBPLibrary_eventPasteText_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText_Statics::ClipboardFunctionsBPLibrary_eventPasteText_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText()
 {
@@ -106,15 +124,6 @@ DEFINE_FUNCTION(UClipboardFunctionsBPLibrary::execPasteText)
 // ********** End Class UClipboardFunctionsBPLibrary Function PasteText ****************************
 
 // ********** Begin Class UClipboardFunctionsBPLibrary *********************************************
-void UClipboardFunctionsBPLibrary::StaticRegisterNativesUClipboardFunctionsBPLibrary()
-{
-	UClass* Class = UClipboardFunctionsBPLibrary::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "CopyText", &UClipboardFunctionsBPLibrary::execCopyText },
-		{ "PasteText", &UClipboardFunctionsBPLibrary::execPasteText },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UClipboardFunctionsBPLibrary;
 UClass* UClipboardFunctionsBPLibrary::GetPrivateStaticClass()
 {
@@ -122,7 +131,7 @@ UClass* UClipboardFunctionsBPLibrary::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UClipboardFunctionsBPLibrary.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("ClipboardFunctionsBPLibrary"),
 			Z_Registration_Info_UClass_UClipboardFunctionsBPLibrary.InnerSingleton,
 			StaticRegisterNativesUClipboardFunctionsBPLibrary,
@@ -152,17 +161,24 @@ struct Z_Construct_UClass_UClipboardFunctionsBPLibrary_Statics
 		{ "ModuleRelativePath", "Public/ClipboardFunctionsBPLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UClipboardFunctionsBPLibrary constinit property declarations *************
+// ********** End Class UClipboardFunctionsBPLibrary constinit property declarations ***************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("CopyText"), .Pointer = &UClipboardFunctionsBPLibrary::execCopyText },
+		{ .NameUTF8 = UTF8TEXT("PasteText"), .Pointer = &UClipboardFunctionsBPLibrary::execPasteText },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText, "CopyText" }, // 3249040704
-		{ &Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText, "PasteText" }, // 4027958086
+		{ &Z_Construct_UFunction_UClipboardFunctionsBPLibrary_CopyText, "CopyText" }, // 1087819327
+		{ &Z_Construct_UFunction_UClipboardFunctionsBPLibrary_PasteText, "PasteText" }, // 1213982911
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UClipboardFunctionsBPLibrary>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UClipboardFunctionsBPLibrary_Statics
 UObject* (*const Z_Construct_UClass_UClipboardFunctionsBPLibrary_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 	(UObject* (*)())Z_Construct_UPackage__Script_ClipboardFunctions,
@@ -183,6 +199,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UClipboardFunctionsBPLi
 	0x000000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UClipboardFunctionsBPLibrary_Statics::Class_MetaDataParams), Z_Construct_UClass_UClipboardFunctionsBPLibrary_Statics::Class_MetaDataParams)
 };
+void UClipboardFunctionsBPLibrary::StaticRegisterNativesUClipboardFunctionsBPLibrary()
+{
+	UClass* Class = UClipboardFunctionsBPLibrary::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UClipboardFunctionsBPLibrary_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UClipboardFunctionsBPLibrary()
 {
 	if (!Z_Registration_Info_UClass_UClipboardFunctionsBPLibrary.OuterSingleton)
@@ -192,21 +213,23 @@ UClass* Z_Construct_UClass_UClipboardFunctionsBPLibrary()
 	return Z_Registration_Info_UClass_UClipboardFunctionsBPLibrary.OuterSingleton;
 }
 UClipboardFunctionsBPLibrary::UClipboardFunctionsBPLibrary(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UClipboardFunctionsBPLibrary);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UClipboardFunctionsBPLibrary);
 UClipboardFunctionsBPLibrary::~UClipboardFunctionsBPLibrary() {}
 // ********** End Class UClipboardFunctionsBPLibrary ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_ClipboardFunctions_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_Statics
+struct Z_CompiledInDeferFile_FID_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UClipboardFunctionsBPLibrary, UClipboardFunctionsBPLibrary::StaticClass, TEXT("UClipboardFunctionsBPLibrary"), &Z_Registration_Info_UClass_UClipboardFunctionsBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UClipboardFunctionsBPLibrary), 3512781830U) },
+		{ Z_Construct_UClass_UClipboardFunctionsBPLibrary, UClipboardFunctionsBPLibrary::StaticClass, TEXT("UClipboardFunctionsBPLibrary"), &Z_Registration_Info_UClass_UClipboardFunctionsBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UClipboardFunctionsBPLibrary), 489122723U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_ClipboardFunctions_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_3293446357(TEXT("/Script/ClipboardFunctions"),
-	Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_ClipboardFunctions_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Plugins_New_folder_ClipboardFunctions_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_4232405078{
+	TEXT("/Script/ClipboardFunctions"),
+	Z_CompiledInDeferFile_FID_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_ClipboardFunctions_Source_ClipboardFunctions_Public_ClipboardFunctionsBPLibrary_h__Script_ClipboardFunctions_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
